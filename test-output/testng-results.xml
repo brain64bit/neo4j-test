@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="64681" started-at="2013-10-21T08:03:54Z" finished-at="2013-10-21T08:04:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="64681" started-at="2013-10-21T08:03:54Z" finished-at="2013-10-21T08:04:59Z">
+      <class name="me.minified.test.dao.UserFriendTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:me.minified.test.dao.UserFriendTest@6ee0a386]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="6" started-at="2013-10-21T15:03:54Z" finished-at="2013-10-21T15:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:me.minified.test.dao.UserFriendTest@6ee0a386]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="64562" started-at="2013-10-21T15:03:54Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2013-10-21T15:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:me.minified.test.dao.UserFriendTest@6ee0a386]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2013-10-21T15:04:59Z" finished-at="2013-10-21T15:04:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void me.minified.test.dao.UserFriendTest.findFriends()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="findFriends()[pri:0, instance:me.minified.test.dao.UserFriendTest@6ee0a386]" name="findFriends" duration-ms="104" started-at="2013-10-21T15:04:59Z" finished-at="2013-10-21T15:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFriends -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:me.minified.test.dao.UserFriendTest@6ee0a386]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2013-10-21T15:04:59Z" finished-at="2013-10-21T15:04:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void me.minified.test.dao.UserFriendTest.findFriends()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:me.minified.test.dao.UserFriendTest@6ee0a386]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2013-10-21T15:04:59Z" finished-at="2013-10-21T15:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- me.minified.test.dao.UserFriendTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

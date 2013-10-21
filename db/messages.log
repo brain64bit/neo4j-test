@@ -1,0 +1,912 @@
+2013-10-21 00:33:06.052+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2013-10-21 00:33:06.052+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-10-21 00:33:06.052+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=220M
+    neostore.nodestore.db.mapped_memory=61M
+    neostore.relationshipstore.db.mapped_memory=269M
+    neostore.propertystore.db.strings.mapped_memory=187M
+    store_dir=db
+    neostore.propertystore.db.arrays.mapped_memory=212M
+2013-10-21 00:33:06.052+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2013-10-21 00:33:06.053+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 2.66 GB
+    Free Physical memory: 175.64 MB
+    Committed virtual memory: 844.96 MB
+    Total swap space: 2.61 GB
+    Free swap space: 2.34 GB
+2013-10-21 00:33:06.054+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 29.56 MB
+    Total memory: 39.88 MB
+    Max   memory: 606.25 MB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.25 MB, used=756.75 kB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=9.44 MB, used=7.57 MB, max=223.06 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=2.06 MB, used=210.62 kB, max=2.06 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=28.38 MB, used=2.53 MB, max=454.69 MB, threshold=0.00 B
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=20.38 MB, used=20.29 MB, max=64.00 MB, threshold=0.00 B
+2013-10-21 00:33:06.056+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 2.6.35-22-generic; arch: i386; cpus: 4
+    Max number of file descriptors: 1024
+    Number of open file descriptors: 103
+    Process id: 17039@g4
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Jakarta
+2013-10-21 00:33:06.057+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) Server VM
+    VM Vendor: Sun Microsystems Inc.
+    VM Version: 20.1-b02
+    JIT compiler: HotSpot Tiered Compilers
+    VM Arguments: [-ea, -Dfile.encoding=UTF-8]
+2013-10-21 00:33:06.057+0000 INFO  [org.neo4j]: Java classpath:
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-expression/3.1.4.RELEASE/spring-expression-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.7/jackson-mapper-asl-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-cypher-dsl/1.9/neo4j-cypher-dsl-1.9.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/aspectj/aspectjweaver/1.7.1/aspectjweaver-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-lucene-index/1.9.3/neo4j-lucene-index-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/dnsns.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-kernel/1.9.3/neo4j-kernel-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/testng/testng/6.8.7/testng-6.8.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.7/jackson-jaxrs-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/slf4j/slf4j-api/1.7.1/slf4j-api-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.1/jcl-over-slf4j-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-neo4j-rest/2.3.1.RELEASE/spring-data-neo4j-rest-2.3.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.7/jackson-core-asl-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/scala-lang/scala-library/2.10.0/scala-library-2.10.0.jar
+     [classpath + loader.0] file:/home/agung/bin/springsource/sts-3.4.0.RELEASE/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-test/3.2.1.RELEASE/spring-test-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-graph-algo/1.9.3/neo4j-graph-algo-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j/1.9.3/neo4j-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-core/3.2.1.RELEASE/spring-core-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-aop/3.2.1.RELEASE/spring-aop-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-commons/1.6.1.RELEASE/spring-data-commons-1.6.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-rest-graphdb/1.9/neo4j-rest-graphdb-1.9.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/sunpkcs11.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/sun/jersey/jersey-core/1.4/jersey-core-1.4.jar
+     [classpath + loader.0] file:/home/agung/projects/neo4j/neo4j-test/target/test-classes/
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-graph-matching/1.9.3/neo4j-graph-matching-1.9.3.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/localedata.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-beans/3.1.4.RELEASE/spring-beans-3.1.4.RELEASE.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/carrotsearch/junit-benchmarks/0.7.0/junit-benchmarks-0.7.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-orm/3.1.4.RELEASE/spring-orm-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/projects/neo4j/neo4j-test/target/classes/
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-neo4j/2.3.1.RELEASE/spring-data-neo4j-2.3.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-aspects/3.2.1.RELEASE/spring-aspects-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-context-support/3.2.1.RELEASE/spring-context-support-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/sunjce_provider.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-jdbc/3.2.1.RELEASE/spring-jdbc-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-cypher/1.9.3/neo4j-cypher-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/3rdparty/javax/ws/rs/jsr311-api/1.1.2.r612/jsr311-api-1.1.2.r612.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/junit/junit/4.11/junit-4.11.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/server-api/1.9/server-api-1.9.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-web/3.2.1.RELEASE/spring-web-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/sun/jersey/jersey-client/1.4/jersey-client-1.4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-jmx/1.9.3/neo4j-jmx-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-jpa/1.3.0.RELEASE/spring-data-jpa-1.3.0.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-udc/1.9.3/neo4j-udc-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-tx/3.1.4.RELEASE/spring-tx-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-context/3.2.1.RELEASE/spring-context-3.2.1.RELEASE.jar
+2013-10-21 00:33:06.062+0000 INFO  [org.neo4j]: Library path:
+    /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386/server
+    /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386
+    /usr/lib/jvm/java-6-sun-1.6.0.26/lib/i386
+    /usr/java/packages/lib/i386
+    /lib
+    /usr/lib
+2013-10-21 00:33:06.063+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386
+    path.separator = :
+    file.encoding.pkg = sun.io
+    sun.java.launcher = SUN_STANDARD
+    user.country = US
+    sun.os.patch.level = unknown
+    user.dir = /home/agung/projects/neo4j/neo4j-test
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot Tiered Compilers
+    user.home = /home/agung
+    user.timezone = Asia/Jakarta
+    file.encoding = UTF-8
+    user.name = agung
+    sun.java.command = org.testng.remote.RemoteTestNG -serport 57984 -d /home/agung/projects/neo4j/neo4j-test/test-output /tmp/testng-eclipse-1116810064/testng-customsuite.xml
+    sun.arch.data.model = 32
+    user.language = en
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = gnome
+    sun.cpu.isalist = 
+2013-10-21 00:33:06.063+0000 INFO  [org.neo4j]: Linux scheduler information:
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+2013-10-21 00:33:06.067+0000 INFO  [org.neo4j]: Network information:
+    Interface ppp0:
+        address: 10.70.81.245
+    Interface lo:
+        address: 127.0.0.1
+2013-10-21 00:33:06.067+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-10-21 00:33:06.076+0000 INFO  [org.neo4j]: Creating new db @ db/neostore
+2013-10-21 00:33:06.281+0000 INFO  [org.neo4j]: [db/neostore.nodestore.db] brickCount=0 brickSize=639630b mappedMem=63963136b (storeSize=0b)
+2013-10-21 00:33:06.356+0000 INFO  [org.neo4j]: db/neostore.nodestore.db hit=1 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.486+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:33:07.487+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:33:07.496+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.530+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.606+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:33:07.607+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:33:07.608+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.strings] brickCount=0 brickSize=195968b mappedMem=196083712b (storeSize=128b)
+2013-10-21 00:33:07.609+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:33:07.610+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:33:07.611+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.arrays] brickCount=0 brickSize=222208b mappedMem=222298112b (storeSize=128b)
+2013-10-21 00:33:07.612+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db] brickCount=0 brickSize=2306865b mappedMem=230686720b (storeSize=0b)
+2013-10-21 00:33:07.613+0000 INFO  [org.neo4j]: [db/neostore.relationshipstore.db] brickCount=0 brickSize=2820642b mappedMem=282066944b (storeSize=0b)
+2013-10-21 00:33:07.614+0000 INFO  [org.neo4j]: [db/neostore.nodestore.db] brickCount=0 brickSize=63963b mappedMem=63963136b (storeSize=9b)
+2013-10-21 00:33:07.615+0000 INFO  [org.neo4j]: [db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:33:07.640+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.674+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.773+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.817+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.851+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.918+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:07.961+0000 INFO  [org.neo4j]: db/neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:08.029+0000 INFO  [org.neo4j]: db/neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:08.109+0000 INFO  [org.neo4j]: db/neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2013-10-21 00:33:08.220+0000 INFO  [org.neo4j]: db/neostore hit=0 miss=8 switches=0 ooe=0
+2013-10-21 00:33:08.262+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:33:08.263+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:33:08.264+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.strings] brickCount=0 brickSize=195968b mappedMem=196083712b (storeSize=128b)
+2013-10-21 00:33:08.265+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:33:08.266+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:33:08.267+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.arrays] brickCount=0 brickSize=222208b mappedMem=222298112b (storeSize=128b)
+2013-10-21 00:33:08.268+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db] brickCount=0 brickSize=2306865b mappedMem=230686720b (storeSize=0b)
+2013-10-21 00:33:08.269+0000 INFO  [org.neo4j]: [db/neostore.relationshipstore.db] brickCount=0 brickSize=2820642b mappedMem=282066944b (storeSize=0b)
+2013-10-21 00:33:08.270+0000 INFO  [org.neo4j]: [db/neostore.nodestore.db] brickCount=0 brickSize=63963b mappedMem=63963136b (storeSize=9b)
+2013-10-21 00:33:08.271+0000 INFO  [org.neo4j]: [db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2013-10-21 00:33:08.272+0000 INFO  [org.neo4j]: Opened logical log [db/nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2013-10-21 00:33:08.356+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2013-10-21 00:33:08.414+0000 INFO  [org.neo4j]: Opened logical log [db/index/lucene.log.1] version=0, lastTxId=1 (clean)
+2013-10-21 00:33:08.467+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2013-10-21 00:33:08.467+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1382315586076, id:-1516419322686280276, store version: 13561656364791302]
+2013-10-21 00:33:08.467+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.3
+2013-10-21 00:33:08.468+0000 INFO  [org.neo4j]: Neo4j component versions:
+2013-10-21 00:33:08.468+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.3
+2013-10-21 00:33:08.469+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2013-10-21 00:33:08.469+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2013-10-21 00:33:08.469+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2013-10-21 00:33:08.469+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2013-10-21 00:33:08.469+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2013-10-21 00:33:08.469+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=1 high=0
+      RelationshipStore: used=0 high=-1
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2013-10-21 00:33:08.470+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2013-10-21 00:33:08.470+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-10-21 00:33:08.470+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-10-21 00:33:08.470+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-10-21 00:33:08.470+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 110775738368 / 13522460672 / 12
+Storage files: (filename : modification date - size)
+      messages.log: 2013-10-21T07:33:08+0700 - 19.85 kB
+      nioneo_logical.log.1: 2013-10-21T07:33:08+0700 - 16.00 B
+      neostore.relationshiptypestore.db: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.relationshiptypestore.db.names.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.nodestore.db.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      nioneo_logical.log.active: 2013-10-21T07:33:08+0700 - 4.00 B
+      neostore.nodestore.db: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.propertystore.db.index.keys: 2013-10-21T07:33:08+0700 - 38.00 B
+      active_tx_log: 2013-10-21T07:33:08+0700 - 11.00 B
+      neostore.propertystore.db.index.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.propertystore.db.index.keys.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.relationshiptypestore.db.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.propertystore.db.arrays.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2013-10-21T07:33:08+0700 - 38.00 B
+      neostore: 2013-10-21T07:33:08+0700 - 54.00 B
+      store_lock: 2013-10-21T07:33:06+0700 - 0.00 B
+      index:
+        lucene-store.db: 2013-10-21T07:33:08+0700 - 40.00 B
+        lucene.log.active: 2013-10-21T07:33:08+0700 - 4.00 B
+        lucene.log.1: 2013-10-21T07:33:08+0700 - 16.00 B
+      - Total: 2013-10-21T07:33:08+0700 - 60.00 B
+      tm_tx_log.1: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db.strings: 2013-10-21T07:33:08+0700 - 128.00 B
+      lock: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.propertystore.db.arrays: 2013-10-21T07:33:08+0700 - 128.00 B
+      neostore.relationshipstore.db.id: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.propertystore.db.index: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.relationshipstore.db: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db.strings.id: 2013-10-21T07:33:08+0700 - 9.00 B
+2013-10-21 00:33:51.565+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2013-10-21 00:33:51.565+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-10-21 00:33:51.566+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=220M
+    neostore.nodestore.db.mapped_memory=61M
+    neostore.relationshipstore.db.mapped_memory=269M
+    neostore.propertystore.db.strings.mapped_memory=187M
+    store_dir=db
+    neostore.propertystore.db.arrays.mapped_memory=212M
+2013-10-21 00:33:51.566+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2013-10-21 00:33:51.566+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 2.66 GB
+    Free Physical memory: 130.79 MB
+    Committed virtual memory: 843.67 MB
+    Total swap space: 2.61 GB
+    Free swap space: 2.34 GB
+2013-10-21 00:33:51.567+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 67.31 MB
+    Total memory: 72.75 MB
+    Max   memory: 606.25 MB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.25 MB, used=778.50 kB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=42.38 MB, used=2.52 MB, max=223.25 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=2.00 MB, used=1.52 MB, max=2.00 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=28.38 MB, used=1.40 MB, max=454.69 MB, threshold=0.00 B
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=20.25 MB, used=20.15 MB, max=64.00 MB, threshold=0.00 B
+2013-10-21 00:33:51.568+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 2.6.35-22-generic; arch: i386; cpus: 4
+    Max number of file descriptors: 1024
+    Number of open file descriptors: 103
+    Process id: 17174@g4
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Jakarta
+2013-10-21 00:33:51.569+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) Server VM
+    VM Vendor: Sun Microsystems Inc.
+    VM Version: 20.1-b02
+    JIT compiler: HotSpot Tiered Compilers
+    VM Arguments: [-ea, -Dfile.encoding=UTF-8]
+2013-10-21 00:33:51.569+0000 INFO  [org.neo4j]: Java classpath:
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-expression/3.1.4.RELEASE/spring-expression-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.7/jackson-mapper-asl-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-cypher-dsl/1.9/neo4j-cypher-dsl-1.9.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/aspectj/aspectjweaver/1.7.1/aspectjweaver-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-lucene-index/1.9.3/neo4j-lucene-index-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/dnsns.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-kernel/1.9.3/neo4j-kernel-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/testng/testng/6.8.7/testng-6.8.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.7/jackson-jaxrs-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/slf4j/slf4j-api/1.7.1/slf4j-api-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.1/jcl-over-slf4j-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-neo4j-rest/2.3.1.RELEASE/spring-data-neo4j-rest-2.3.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.7/jackson-core-asl-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/scala-lang/scala-library/2.10.0/scala-library-2.10.0.jar
+     [classpath + loader.0] file:/home/agung/bin/springsource/sts-3.4.0.RELEASE/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-test/3.2.1.RELEASE/spring-test-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-graph-algo/1.9.3/neo4j-graph-algo-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j/1.9.3/neo4j-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-core/3.2.1.RELEASE/spring-core-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-aop/3.2.1.RELEASE/spring-aop-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-commons/1.6.1.RELEASE/spring-data-commons-1.6.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-rest-graphdb/1.9/neo4j-rest-graphdb-1.9.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/sunpkcs11.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/sun/jersey/jersey-core/1.4/jersey-core-1.4.jar
+     [classpath + loader.0] file:/home/agung/projects/neo4j/neo4j-test/target/test-classes/
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-graph-matching/1.9.3/neo4j-graph-matching-1.9.3.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/localedata.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-beans/3.1.4.RELEASE/spring-beans-3.1.4.RELEASE.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/carrotsearch/junit-benchmarks/0.7.0/junit-benchmarks-0.7.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-orm/3.1.4.RELEASE/spring-orm-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/projects/neo4j/neo4j-test/target/classes/
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-neo4j/2.3.1.RELEASE/spring-data-neo4j-2.3.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-aspects/3.2.1.RELEASE/spring-aspects-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-context-support/3.2.1.RELEASE/spring-context-support-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/sunjce_provider.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-jdbc/3.2.1.RELEASE/spring-jdbc-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-cypher/1.9.3/neo4j-cypher-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/3rdparty/javax/ws/rs/jsr311-api/1.1.2.r612/jsr311-api-1.1.2.r612.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/junit/junit/4.11/junit-4.11.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/server-api/1.9/server-api-1.9.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-web/3.2.1.RELEASE/spring-web-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/sun/jersey/jersey-client/1.4/jersey-client-1.4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-jmx/1.9.3/neo4j-jmx-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-jpa/1.3.0.RELEASE/spring-data-jpa-1.3.0.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-udc/1.9.3/neo4j-udc-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-tx/3.1.4.RELEASE/spring-tx-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-context/3.2.1.RELEASE/spring-context-3.2.1.RELEASE.jar
+2013-10-21 00:33:51.571+0000 INFO  [org.neo4j]: Library path:
+    /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386/server
+    /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386
+    /usr/lib/jvm/java-6-sun-1.6.0.26/lib/i386
+    /usr/java/packages/lib/i386
+    /lib
+    /usr/lib
+2013-10-21 00:33:51.571+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386
+    path.separator = :
+    file.encoding.pkg = sun.io
+    sun.java.launcher = SUN_STANDARD
+    user.country = US
+    sun.os.patch.level = unknown
+    user.dir = /home/agung/projects/neo4j/neo4j-test
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot Tiered Compilers
+    user.home = /home/agung
+    user.timezone = Asia/Jakarta
+    file.encoding = UTF-8
+    user.name = agung
+    sun.java.command = org.testng.remote.RemoteTestNG -serport 46957 -d /home/agung/projects/neo4j/neo4j-test/test-output /tmp/testng-eclipse-82097678/testng-customsuite.xml
+    sun.arch.data.model = 32
+    user.language = en
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = gnome
+    sun.cpu.isalist = 
+2013-10-21 00:33:51.572+0000 INFO  [org.neo4j]: Linux scheduler information:
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+2013-10-21 00:33:51.575+0000 INFO  [org.neo4j]: Network information:
+    Interface ppp0:
+        address: 10.70.81.245
+    Interface lo:
+        address: 127.0.0.1
+2013-10-21 00:33:51.576+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-10-21 00:33:51.585+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db.names non clean shutdown detected
+2013-10-21 00:33:51.585+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:33:51.586+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db non clean shutdown detected
+2013-10-21 00:33:51.586+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:33:51.586+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.strings non clean shutdown detected
+2013-10-21 00:33:51.586+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.strings] brickCount=0 brickSize=195968b mappedMem=196083712b (storeSize=128b)
+2013-10-21 00:33:51.587+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index.keys non clean shutdown detected
+2013-10-21 00:33:51.587+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:33:51.587+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index non clean shutdown detected
+2013-10-21 00:33:51.587+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:33:51.587+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.arrays non clean shutdown detected
+2013-10-21 00:33:51.588+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.arrays] brickCount=0 brickSize=222208b mappedMem=222298112b (storeSize=128b)
+2013-10-21 00:33:51.588+0000 INFO  [org.neo4j]: db/neostore.propertystore.db non clean shutdown detected
+2013-10-21 00:33:51.588+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db] brickCount=0 brickSize=2306865b mappedMem=230686720b (storeSize=0b)
+2013-10-21 00:33:51.588+0000 INFO  [org.neo4j]: db/neostore.relationshipstore.db non clean shutdown detected
+2013-10-21 00:33:51.588+0000 INFO  [org.neo4j]: [db/neostore.relationshipstore.db] brickCount=0 brickSize=2820642b mappedMem=282066944b (storeSize=0b)
+2013-10-21 00:33:51.589+0000 INFO  [org.neo4j]: db/neostore.nodestore.db non clean shutdown detected
+2013-10-21 00:33:51.589+0000 INFO  [org.neo4j]: [db/neostore.nodestore.db] brickCount=0 brickSize=63963b mappedMem=63963136b (storeSize=9b)
+2013-10-21 00:33:51.589+0000 INFO  [org.neo4j]: db/neostore non clean shutdown detected
+2013-10-21 00:33:51.590+0000 INFO  [org.neo4j]: [db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2013-10-21 00:33:51.590+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [db/nioneo_logical.log.1]. Recovery started ...
+2013-10-21 00:33:51.590+0000 INFO  [org.neo4j]: [db/nioneo_logical.log.1] logVersion=0 with committed tx=1
+2013-10-21 00:33:51.591+0000 INFO  [org.neo4j]: [db/nioneo_logical.log.1] entries found=0 lastEntryPos=16
+2013-10-21 00:33:51.591+0000 INFO  [org.neo4j]: Opened logical log [db/nioneo_logical.log.1] version=0, lastTxId=-1 (recovered)
+2013-10-21 00:33:51.591+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] sorting 0 xids
+2013-10-21 00:33:51.592+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2013-10-21 00:33:51.734+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db.names rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:33:51.868+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index.keys rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:33:51.947+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:33:52.026+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.strings rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:33:52.105+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:33:52.172+0000 INFO  [org.neo4j]: db/neostore.propertystore.db rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:33:52.251+0000 INFO  [org.neo4j]: db/neostore.relationshipstore.db rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:33:52.318+0000 INFO  [org.neo4j]: db/neostore.nodestore.db rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:33:52.419+0000 INFO  [org.neo4j]: db/neostore rebuild id generator, highId=6 defragged count=0
+2013-10-21 00:33:52.447+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] recovery completed.
+2013-10-21 00:33:52.447+0000 INFO  [org.neo4j]: Recovery on log [db/nioneo_logical.log.1] completed.
+2013-10-21 00:33:52.450+0000 INFO  [org.neo4j]: TM opening log: db/tm_tx_log.1
+2013-10-21 00:33:52.455+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [db/index/lucene.log.1]. Recovery started ...
+2013-10-21 00:33:52.455+0000 INFO  [org.neo4j]: [db/index/lucene.log.1] logVersion=0 with committed tx=1
+2013-10-21 00:33:52.456+0000 INFO  [org.neo4j]: [db/index/lucene.log.1] entries found=0 lastEntryPos=16
+2013-10-21 00:33:52.457+0000 INFO  [org.neo4j]: Opened logical log [db/index/lucene.log.1] version=0, lastTxId=-1 (recovered)
+2013-10-21 00:33:52.457+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] sorting 0 xids
+2013-10-21 00:33:52.458+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] checkRecoveryComplete 0 xids
+2013-10-21 00:33:52.458+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] recovery completed.
+2013-10-21 00:33:52.458+0000 INFO  [org.neo4j]: Recovery on log [db/index/lucene.log.1] completed.
+2013-10-21 00:33:52.461+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2013-10-21 00:33:52.461+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1382315586076, id:-1516419322686280276, store version: 13561656364791302]
+2013-10-21 00:33:52.461+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.3
+2013-10-21 00:33:52.462+0000 INFO  [org.neo4j]: Neo4j component versions:
+2013-10-21 00:33:52.464+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.3
+2013-10-21 00:33:52.464+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2013-10-21 00:33:52.464+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2013-10-21 00:33:52.465+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2013-10-21 00:33:52.465+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2013-10-21 00:33:52.465+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2013-10-21 00:33:52.466+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=1 high=0
+      RelationshipStore: used=1 high=0
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=1 high=0
+      PropertyIndexStore: used=1 high=0
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2013-10-21 00:33:52.467+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2013-10-21 00:33:52.467+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-10-21 00:33:52.467+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-10-21 00:33:52.467+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-10-21 00:33:52.467+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 110775738368 / 13522227200 / 12
+Storage files: (filename : modification date - size)
+      messages.log: 2013-10-21T07:33:52+0700 - 42.72 kB
+      nioneo_logical.log.1: 2013-10-21T07:33:08+0700 - 16.00 B
+      neostore.relationshiptypestore.db: 2013-10-21T07:33:51+0700 - 0.00 B
+      neostore.relationshiptypestore.db.names.id: 2013-10-21T07:33:51+0700 - 9.00 B
+      neostore.nodestore.db.id: 2013-10-21T07:33:52+0700 - 9.00 B
+      neostore.id: 2013-10-21T07:33:52+0700 - 9.00 B
+      nioneo_logical.log.active: 2013-10-21T07:33:08+0700 - 4.00 B
+      neostore.nodestore.db: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.propertystore.db.index.keys: 2013-10-21T07:33:08+0700 - 38.00 B
+      active_tx_log: 2013-10-21T07:33:08+0700 - 11.00 B
+      neostore.propertystore.db.index.id: 2013-10-21T07:33:51+0700 - 9.00 B
+      neostore.propertystore.db.index.keys.id: 2013-10-21T07:33:51+0700 - 9.00 B
+      neostore.relationshiptypestore.db.id: 2013-10-21T07:33:51+0700 - 9.00 B
+      neostore.propertystore.db.arrays.id: 2013-10-21T07:33:52+0700 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2013-10-21T07:33:08+0700 - 38.00 B
+      neostore: 2013-10-21T07:33:52+0700 - 54.00 B
+      store_lock: 2013-10-21T07:33:06+0700 - 0.00 B
+      index:
+        lucene-store.db: 2013-10-21T07:33:52+0700 - 40.00 B
+        lucene.log.active: 2013-10-21T07:33:08+0700 - 4.00 B
+        lucene.log.1: 2013-10-21T07:33:08+0700 - 16.00 B
+      - Total: 2013-10-21T07:33:08+0700 - 60.00 B
+      tm_tx_log.1: 2013-10-21T07:33:52+0700 - 0.00 B
+      neostore.propertystore.db.strings: 2013-10-21T07:33:08+0700 - 128.00 B
+      lock: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db.id: 2013-10-21T07:33:52+0700 - 9.00 B
+      neostore.propertystore.db.arrays: 2013-10-21T07:33:08+0700 - 128.00 B
+      neostore.relationshipstore.db.id: 2013-10-21T07:33:52+0700 - 9.00 B
+      neostore.propertystore.db.index: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.relationshipstore.db: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db.strings.id: 2013-10-21T07:33:52+0700 - 9.00 B
+2013-10-21 00:34:33.222+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2013-10-21 00:34:33.223+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-10-21 00:34:33.223+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=220M
+    neostore.nodestore.db.mapped_memory=61M
+    neostore.relationshipstore.db.mapped_memory=269M
+    neostore.propertystore.db.strings.mapped_memory=187M
+    store_dir=db
+    neostore.propertystore.db.arrays.mapped_memory=212M
+2013-10-21 00:34:33.223+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2013-10-21 00:34:33.223+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 2.66 GB
+    Free Physical memory: 125.92 MB
+    Committed virtual memory: 843.27 MB
+    Total swap space: 2.61 GB
+    Free swap space: 2.34 GB
+2013-10-21 00:34:33.225+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 64.30 MB
+    Total memory: 72.69 MB
+    Max   memory: 606.25 MB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.25 MB, used=700.13 kB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=42.38 MB, used=5.61 MB, max=223.38 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=1.94 MB, used=1.39 MB, max=1.94 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=28.38 MB, used=1.38 MB, max=454.69 MB, threshold=0.00 B
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=20.38 MB, used=20.29 MB, max=64.00 MB, threshold=0.00 B
+2013-10-21 00:34:33.227+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 2.6.35-22-generic; arch: i386; cpus: 4
+    Max number of file descriptors: 1024
+    Number of open file descriptors: 103
+    Process id: 17305@g4
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Jakarta
+2013-10-21 00:34:33.227+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) Server VM
+    VM Vendor: Sun Microsystems Inc.
+    VM Version: 20.1-b02
+    JIT compiler: HotSpot Tiered Compilers
+    VM Arguments: [-ea, -Dfile.encoding=UTF-8]
+2013-10-21 00:34:33.228+0000 INFO  [org.neo4j]: Java classpath:
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-expression/3.1.4.RELEASE/spring-expression-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.7/jackson-mapper-asl-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-cypher-dsl/1.9/neo4j-cypher-dsl-1.9.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/aspectj/aspectjweaver/1.7.1/aspectjweaver-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-lucene-index/1.9.3/neo4j-lucene-index-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/dnsns.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-kernel/1.9.3/neo4j-kernel-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/testng/testng/6.8.7/testng-6.8.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.7/jackson-jaxrs-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/slf4j/slf4j-api/1.7.1/slf4j-api-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.1/jcl-over-slf4j-1.7.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-neo4j-rest/2.3.1.RELEASE/spring-data-neo4j-rest-2.3.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.7/jackson-core-asl-1.9.7.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/scala-lang/scala-library/2.10.0/scala-library-2.10.0.jar
+     [classpath + loader.0] file:/home/agung/bin/springsource/sts-3.4.0.RELEASE/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-test/3.2.1.RELEASE/spring-test-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-graph-algo/1.9.3/neo4j-graph-algo-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j/1.9.3/neo4j-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-core/3.2.1.RELEASE/spring-core-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-aop/3.2.1.RELEASE/spring-aop-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-commons/1.6.1.RELEASE/spring-data-commons-1.6.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-rest-graphdb/1.9/neo4j-rest-graphdb-1.9.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/sunpkcs11.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/sun/jersey/jersey-core/1.4/jersey-core-1.4.jar
+     [classpath + loader.0] file:/home/agung/projects/neo4j/neo4j-test/target/test-classes/
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-graph-matching/1.9.3/neo4j-graph-matching-1.9.3.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/localedata.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-beans/3.1.4.RELEASE/spring-beans-3.1.4.RELEASE.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/carrotsearch/junit-benchmarks/0.7.0/junit-benchmarks-0.7.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-orm/3.1.4.RELEASE/spring-orm-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/projects/neo4j/neo4j-test/target/classes/
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-neo4j/2.3.1.RELEASE/spring-data-neo4j-2.3.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-aspects/3.2.1.RELEASE/spring-aspects-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-context-support/3.2.1.RELEASE/spring-context-support-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar
+     [loader.1] file:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/sunjce_provider.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-jdbc/3.2.1.RELEASE/spring-jdbc-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-cypher/1.9.3/neo4j-cypher-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/3rdparty/javax/ws/rs/jsr311-api/1.1.2.r612/jsr311-api-1.1.2.r612.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/junit/junit/4.11/junit-4.11.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/server-api/1.9/server-api-1.9.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-web/3.2.1.RELEASE/spring-web-3.2.1.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/com/sun/jersey/jersey-client/1.4/jersey-client-1.4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-jmx/1.9.3/neo4j-jmx-1.9.3.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/data/spring-data-jpa/1.3.0.RELEASE/spring-data-jpa-1.3.0.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/neo4j/neo4j-udc/1.9.3/neo4j-udc-1.9.3.jar
+     [bootstrap] /usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-tx/3.1.4.RELEASE/spring-tx-3.1.4.RELEASE.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+     [classpath + loader.0] file:/home/agung/.m2/repository/org/springframework/spring-context/3.2.1.RELEASE/spring-context-3.2.1.RELEASE.jar
+2013-10-21 00:34:33.233+0000 INFO  [org.neo4j]: Library path:
+    /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386/server
+    /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386
+    /usr/lib/jvm/java-6-sun-1.6.0.26/lib/i386
+    /usr/java/packages/lib/i386
+    /lib
+    /usr/lib
+2013-10-21 00:34:33.233+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/i386
+    path.separator = :
+    file.encoding.pkg = sun.io
+    sun.java.launcher = SUN_STANDARD
+    user.country = US
+    sun.os.patch.level = unknown
+    user.dir = /home/agung/projects/neo4j/neo4j-test
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot Tiered Compilers
+    user.home = /home/agung
+    user.timezone = Asia/Jakarta
+    file.encoding = UTF-8
+    user.name = agung
+    sun.java.command = org.testng.remote.RemoteTestNG -serport 60440 -d /home/agung/projects/neo4j/neo4j-test/test-output /tmp/testng-eclipse--79234705/testng-customsuite.xml
+    sun.arch.data.model = 32
+    user.language = en
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = gnome
+    sun.cpu.isalist = 
+2013-10-21 00:34:33.233+0000 INFO  [org.neo4j]: Linux scheduler information:
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+2013-10-21 00:34:33.237+0000 INFO  [org.neo4j]: Network information:
+    Interface ppp0:
+        address: 10.70.81.245
+    Interface lo:
+        address: 127.0.0.1
+2013-10-21 00:34:33.237+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-10-21 00:34:33.247+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db.names non clean shutdown detected
+2013-10-21 00:34:33.247+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:34:33.248+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db non clean shutdown detected
+2013-10-21 00:34:33.248+0000 INFO  [org.neo4j]: [db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:34:33.248+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.strings non clean shutdown detected
+2013-10-21 00:34:33.248+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.strings] brickCount=0 brickSize=195968b mappedMem=196083712b (storeSize=128b)
+2013-10-21 00:34:33.249+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index.keys non clean shutdown detected
+2013-10-21 00:34:33.249+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-10-21 00:34:33.249+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index non clean shutdown detected
+2013-10-21 00:34:33.249+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-10-21 00:34:33.249+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.arrays non clean shutdown detected
+2013-10-21 00:34:33.250+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db.arrays] brickCount=0 brickSize=222208b mappedMem=222298112b (storeSize=128b)
+2013-10-21 00:34:33.255+0000 INFO  [org.neo4j]: db/neostore.propertystore.db non clean shutdown detected
+2013-10-21 00:34:33.255+0000 INFO  [org.neo4j]: [db/neostore.propertystore.db] brickCount=0 brickSize=2306865b mappedMem=230686720b (storeSize=0b)
+2013-10-21 00:34:33.255+0000 INFO  [org.neo4j]: db/neostore.relationshipstore.db non clean shutdown detected
+2013-10-21 00:34:33.256+0000 INFO  [org.neo4j]: [db/neostore.relationshipstore.db] brickCount=0 brickSize=2820642b mappedMem=282066944b (storeSize=0b)
+2013-10-21 00:34:33.256+0000 INFO  [org.neo4j]: db/neostore.nodestore.db non clean shutdown detected
+2013-10-21 00:34:33.256+0000 INFO  [org.neo4j]: [db/neostore.nodestore.db] brickCount=0 brickSize=63963b mappedMem=63963136b (storeSize=9b)
+2013-10-21 00:34:33.257+0000 INFO  [org.neo4j]: db/neostore non clean shutdown detected
+2013-10-21 00:34:33.257+0000 INFO  [org.neo4j]: [db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2013-10-21 00:34:33.257+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [db/nioneo_logical.log.1]. Recovery started ...
+2013-10-21 00:34:33.257+0000 INFO  [org.neo4j]: [db/nioneo_logical.log.1] logVersion=0 with committed tx=1
+2013-10-21 00:34:33.258+0000 INFO  [org.neo4j]: [db/nioneo_logical.log.1] entries found=0 lastEntryPos=16
+2013-10-21 00:34:33.258+0000 INFO  [org.neo4j]: Opened logical log [db/nioneo_logical.log.1] version=0, lastTxId=-1 (recovered)
+2013-10-21 00:34:33.258+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] sorting 0 xids
+2013-10-21 00:34:33.259+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2013-10-21 00:34:33.328+0000 INFO  [org.neo4j]: db/neostore.relationshiptypestore.db.names rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:34:33.484+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index.keys rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:34:33.563+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.index rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:34:33.652+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.strings rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:34:33.731+0000 INFO  [org.neo4j]: db/neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:34:33.809+0000 INFO  [org.neo4j]: db/neostore.propertystore.db rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:34:33.878+0000 INFO  [org.neo4j]: db/neostore.relationshipstore.db rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:34:33.968+0000 INFO  [org.neo4j]: db/neostore.nodestore.db rebuild id generator, highId=1 defragged count=0
+2013-10-21 00:34:34.035+0000 INFO  [org.neo4j]: db/neostore rebuild id generator, highId=6 defragged count=0
+2013-10-21 00:34:34.063+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] recovery completed.
+2013-10-21 00:34:34.064+0000 INFO  [org.neo4j]: Recovery on log [db/nioneo_logical.log.1] completed.
+2013-10-21 00:34:34.067+0000 INFO  [org.neo4j]: TM opening log: db/tm_tx_log.1
+2013-10-21 00:34:34.071+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [db/index/lucene.log.1]. Recovery started ...
+2013-10-21 00:34:34.072+0000 INFO  [org.neo4j]: [db/index/lucene.log.1] logVersion=0 with committed tx=1
+2013-10-21 00:34:34.072+0000 INFO  [org.neo4j]: [db/index/lucene.log.1] entries found=0 lastEntryPos=16
+2013-10-21 00:34:34.073+0000 INFO  [org.neo4j]: Opened logical log [db/index/lucene.log.1] version=0, lastTxId=-1 (recovered)
+2013-10-21 00:34:34.073+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] sorting 0 xids
+2013-10-21 00:34:34.073+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] checkRecoveryComplete 0 xids
+2013-10-21 00:34:34.073+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] recovery completed.
+2013-10-21 00:34:34.073+0000 INFO  [org.neo4j]: Recovery on log [db/index/lucene.log.1] completed.
+2013-10-21 00:34:34.075+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2013-10-21 00:34:34.075+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1382315586076, id:-1516419322686280276, store version: 13561656364791302]
+2013-10-21 00:34:34.075+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.3
+2013-10-21 00:34:34.075+0000 INFO  [org.neo4j]: Neo4j component versions:
+2013-10-21 00:34:34.078+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.3
+2013-10-21 00:34:34.078+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2013-10-21 00:34:34.078+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2013-10-21 00:34:34.078+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2013-10-21 00:34:34.079+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2013-10-21 00:34:34.079+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2013-10-21 00:34:34.079+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=1 high=0
+      RelationshipStore: used=1 high=0
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=1 high=0
+      PropertyIndexStore: used=1 high=0
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2013-10-21 00:34:34.081+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2013-10-21 00:34:34.081+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-10-21 00:34:34.081+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-10-21 00:34:34.081+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-10-21 00:34:34.082+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 110775738368 / 13522292736 / 12
+Storage files: (filename : modification date - size)
+      messages.log: 2013-10-21T07:34:34+0700 - 65.59 kB
+      nioneo_logical.log.1: 2013-10-21T07:33:08+0700 - 16.00 B
+      neostore.relationshiptypestore.db: 2013-10-21T07:34:33+0700 - 0.00 B
+      neostore.relationshiptypestore.db.names.id: 2013-10-21T07:34:33+0700 - 9.00 B
+      neostore.nodestore.db.id: 2013-10-21T07:34:33+0700 - 9.00 B
+      neostore.id: 2013-10-21T07:34:34+0700 - 9.00 B
+      nioneo_logical.log.active: 2013-10-21T07:33:08+0700 - 4.00 B
+      neostore.nodestore.db: 2013-10-21T07:33:08+0700 - 9.00 B
+      neostore.propertystore.db.index.keys: 2013-10-21T07:33:08+0700 - 38.00 B
+      active_tx_log: 2013-10-21T07:33:08+0700 - 11.00 B
+      neostore.propertystore.db.index.id: 2013-10-21T07:34:33+0700 - 9.00 B
+      neostore.propertystore.db.index.keys.id: 2013-10-21T07:34:33+0700 - 9.00 B
+      neostore.relationshiptypestore.db.id: 2013-10-21T07:34:33+0700 - 9.00 B
+      neostore.propertystore.db.arrays.id: 2013-10-21T07:34:33+0700 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2013-10-21T07:33:08+0700 - 38.00 B
+      neostore: 2013-10-21T07:34:34+0700 - 54.00 B
+      store_lock: 2013-10-21T07:33:06+0700 - 0.00 B
+      index:
+        lucene-store.db: 2013-10-21T07:34:34+0700 - 40.00 B
+        lucene.log.active: 2013-10-21T07:33:08+0700 - 4.00 B
+        lucene.log.1: 2013-10-21T07:33:08+0700 - 16.00 B
+      - Total: 2013-10-21T07:33:08+0700 - 60.00 B
+      tm_tx_log.1: 2013-10-21T07:34:34+0700 - 0.00 B
+      neostore.propertystore.db.strings: 2013-10-21T07:33:08+0700 - 128.00 B
+      lock: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db.id: 2013-10-21T07:34:33+0700 - 9.00 B
+      neostore.propertystore.db.arrays: 2013-10-21T07:33:08+0700 - 128.00 B
+      neostore.relationshipstore.db.id: 2013-10-21T07:34:33+0700 - 9.00 B
+      neostore.propertystore.db.index: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.relationshipstore.db: 2013-10-21T07:33:08+0700 - 0.00 B
+      neostore.propertystore.db.strings.id: 2013-10-21T07:34:33+0700 - 9.00 B
